@@ -1,0 +1,410 @@
+
+.PHONY: pv.add.n-vsim-run-gui
+pv.add.n-vsim-run-gui: vsim-all xpulp_tests/pv.add.n.hex
+pv.add.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.add.n.hex"
+pv.add.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.add.sc.n-vsim-run-gui
+pv.add.sc.n-vsim-run-gui: vsim-all xpulp_tests/pv.add.sc.n.hex
+pv.add.sc.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.add.sc.n.hex"
+pv.add.sc.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.add.c-vsim-run-gui
+pv.add.c-vsim-run-gui: vsim-all xpulp_tests/pv.add.c.hex
+pv.add.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.add.c.hex"
+pv.add.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.add.sc.c-vsim-run-gui
+pv.add.sc.c-vsim-run-gui: vsim-all xpulp_tests/pv.add.sc.c.hex
+pv.add.sc.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.add.sc.c.hex"
+pv.add.sc.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sub.n-vsim-run-gui
+pv.sub.n-vsim-run-gui: vsim-all xpulp_tests/pv.sub.n.hex
+pv.sub.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sub.n.hex"
+pv.sub.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sub.sc.n-vsim-run-gui
+pv.sub.sc.n-vsim-run-gui: vsim-all xpulp_tests/pv.sub.sc.n.hex
+pv.sub.sc.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sub.sc.n.hex"
+pv.sub.sc.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sub.c-vsim-run-gui
+pv.sub.c-vsim-run-gui: vsim-all xpulp_tests/pv.sub.c.hex
+pv.sub.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sub.c.hex"
+pv.sub.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sub.sc.c-vsim-run-gui
+pv.sub.sc.c-vsim-run-gui: vsim-all xpulp_tests/pv.sub.sc.c.hex
+pv.sub.sc.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sub.sc.c.hex"
+pv.sub.sc.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.avg.n-vsim-run-gui
+pv.avg.n-vsim-run-gui: vsim-all xpulp_tests/pv.avg.n.hex
+pv.avg.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.avg.n.hex"
+pv.avg.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.avg.sc.n-vsim-run-gui
+pv.avg.sc.n-vsim-run-gui: vsim-all xpulp_tests/pv.avg.sc.n.hex
+pv.avg.sc.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.avg.sc.n.hex"
+pv.avg.sc.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.avg.c-vsim-run-gui
+pv.avg.c-vsim-run-gui: vsim-all xpulp_tests/pv.avg.c.hex
+pv.avg.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.avg.c.hex"
+pv.avg.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.avg.sc.c-vsim-run-gui
+pv.avg.sc.c-vsim-run-gui: vsim-all xpulp_tests/pv.avg.sc.c.hex
+pv.avg.sc.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.avg.sc.c.hex"
+pv.avg.sc.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.avgu.n-vsim-run-gui
+pv.avgu.n-vsim-run-gui: vsim-all xpulp_tests/pv.avgu.n.hex
+pv.avgu.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.avgu.n.hex"
+pv.avgu.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.avgu.sc.n-vsim-run-gui
+pv.avgu.sc.n-vsim-run-gui: vsim-all xpulp_tests/pv.avgu.sc.n.hex
+pv.avgu.sc.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.avgu.sc.n.hex"
+pv.avgu.sc.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.avgu.c-vsim-run-gui
+pv.avgu.c-vsim-run-gui: vsim-all xpulp_tests/pv.avgu.c.hex
+pv.avgu.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.avgu.c.hex"
+pv.avgu.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.avgu.sc.c-vsim-run-gui
+pv.avgu.sc.c-vsim-run-gui: vsim-all xpulp_tests/pv.avgu.sc.c.hex
+pv.avgu.sc.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.avgu.sc.c.hex"
+pv.avgu.sc.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.min.n-vsim-run-gui
+pv.min.n-vsim-run-gui: vsim-all xpulp_tests/pv.min.n.hex
+pv.min.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.min.n.hex"
+pv.min.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.min.sc.n-vsim-run-gui
+pv.min.sc.n-vsim-run-gui: vsim-all xpulp_tests/pv.min.sc.n.hex
+pv.min.sc.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.min.sc.n.hex"
+pv.min.sc.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.min.c-vsim-run-gui
+pv.min.c-vsim-run-gui: vsim-all xpulp_tests/pv.min.c.hex
+pv.min.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.min.c.hex"
+pv.min.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.min.sc.c-vsim-run-gui
+pv.min.sc.c-vsim-run-gui: vsim-all xpulp_tests/pv.min.sc.c.hex
+pv.min.sc.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.min.sc.c.hex"
+pv.min.sc.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.minu.n-vsim-run-gui
+pv.minu.n-vsim-run-gui: vsim-all xpulp_tests/pv.minu.n.hex
+pv.minu.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.minu.n.hex"
+pv.minu.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.minu.sc.n-vsim-run-gui
+pv.minu.sc.n-vsim-run-gui: vsim-all xpulp_tests/pv.minu.sc.n.hex
+pv.minu.sc.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.minu.sc.n.hex"
+pv.minu.sc.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.minu.c-vsim-run-gui
+pv.minu.c-vsim-run-gui: vsim-all xpulp_tests/pv.minu.c.hex
+pv.minu.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.minu.c.hex"
+pv.minu.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.minu.sc.c-vsim-run-gui
+pv.minu.sc.c-vsim-run-gui: vsim-all xpulp_tests/pv.minu.sc.c.hex
+pv.minu.sc.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.minu.sc.c.hex"
+pv.minu.sc.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.max.n-vsim-run-gui
+pv.max.n-vsim-run-gui: vsim-all xpulp_tests/pv.max.n.hex
+pv.max.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.max.n.hex"
+pv.max.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.max.sc.n-vsim-run-gui
+pv.max.sc.n-vsim-run-gui: vsim-all xpulp_tests/pv.max.sc.n.hex
+pv.max.sc.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.max.sc.n.hex"
+pv.max.sc.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.max.c-vsim-run-gui
+pv.max.c-vsim-run-gui: vsim-all xpulp_tests/pv.max.c.hex
+pv.max.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.max.c.hex"
+pv.max.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.max.sc.c-vsim-run-gui
+pv.max.sc.c-vsim-run-gui: vsim-all xpulp_tests/pv.max.sc.c.hex
+pv.max.sc.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.max.sc.c.hex"
+pv.max.sc.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.maxu.n-vsim-run-gui
+pv.maxu.n-vsim-run-gui: vsim-all xpulp_tests/pv.maxu.n.hex
+pv.maxu.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.maxu.n.hex"
+pv.maxu.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.maxu.sc.n-vsim-run-gui
+pv.maxu.sc.n-vsim-run-gui: vsim-all xpulp_tests/pv.maxu.sc.n.hex
+pv.maxu.sc.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.maxu.sc.n.hex"
+pv.maxu.sc.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.maxu.c-vsim-run-gui
+pv.maxu.c-vsim-run-gui: vsim-all xpulp_tests/pv.maxu.c.hex
+pv.maxu.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.maxu.c.hex"
+pv.maxu.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.maxu.sc.c-vsim-run-gui
+pv.maxu.sc.c-vsim-run-gui: vsim-all xpulp_tests/pv.maxu.sc.c.hex
+pv.maxu.sc.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.maxu.sc.c.hex"
+pv.maxu.sc.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.srl.n-vsim-run-gui
+pv.srl.n-vsim-run-gui: vsim-all xpulp_tests/pv.srl.n.hex
+pv.srl.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.srl.n.hex"
+pv.srl.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.srl.sc.n-vsim-run-gui
+pv.srl.sc.n-vsim-run-gui: vsim-all xpulp_tests/pv.srl.sc.n.hex
+pv.srl.sc.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.srl.sc.n.hex"
+pv.srl.sc.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.srl.c-vsim-run-gui
+pv.srl.c-vsim-run-gui: vsim-all xpulp_tests/pv.srl.c.hex
+pv.srl.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.srl.c.hex"
+pv.srl.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.srl.sc.c-vsim-run-gui
+pv.srl.sc.c-vsim-run-gui: vsim-all xpulp_tests/pv.srl.sc.c.hex
+pv.srl.sc.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.srl.sc.c.hex"
+pv.srl.sc.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sra.n-vsim-run-gui
+pv.sra.n-vsim-run-gui: vsim-all xpulp_tests/pv.sra.n.hex
+pv.sra.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sra.n.hex"
+pv.sra.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sra.sc.n-vsim-run-gui
+pv.sra.sc.n-vsim-run-gui: vsim-all xpulp_tests/pv.sra.sc.n.hex
+pv.sra.sc.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sra.sc.n.hex"
+pv.sra.sc.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sra.c-vsim-run-gui
+pv.sra.c-vsim-run-gui: vsim-all xpulp_tests/pv.sra.c.hex
+pv.sra.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sra.c.hex"
+pv.sra.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sra.sc.c-vsim-run-gui
+pv.sra.sc.c-vsim-run-gui: vsim-all xpulp_tests/pv.sra.sc.c.hex
+pv.sra.sc.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sra.sc.c.hex"
+pv.sra.sc.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sll.n-vsim-run-gui
+pv.sll.n-vsim-run-gui: vsim-all xpulp_tests/pv.sll.n.hex
+pv.sll.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sll.n.hex"
+pv.sll.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sll.sc.n-vsim-run-gui
+pv.sll.sc.n-vsim-run-gui: vsim-all xpulp_tests/pv.sll.sc.n.hex
+pv.sll.sc.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sll.sc.n.hex"
+pv.sll.sc.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sll.c-vsim-run-gui
+pv.sll.c-vsim-run-gui: vsim-all xpulp_tests/pv.sll.c.hex
+pv.sll.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sll.c.hex"
+pv.sll.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sll.sc.c-vsim-run-gui
+pv.sll.sc.c-vsim-run-gui: vsim-all xpulp_tests/pv.sll.sc.c.hex
+pv.sll.sc.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sll.sc.c.hex"
+pv.sll.sc.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.or.n-vsim-run-gui
+pv.or.n-vsim-run-gui: vsim-all xpulp_tests/pv.or.n.hex
+pv.or.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.or.n.hex"
+pv.or.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.or.sc.n-vsim-run-gui
+pv.or.sc.n-vsim-run-gui: vsim-all xpulp_tests/pv.or.sc.n.hex
+pv.or.sc.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.or.sc.n.hex"
+pv.or.sc.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.or.c-vsim-run-gui
+pv.or.c-vsim-run-gui: vsim-all xpulp_tests/pv.or.c.hex
+pv.or.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.or.c.hex"
+pv.or.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.or.sc.c-vsim-run-gui
+pv.or.sc.c-vsim-run-gui: vsim-all xpulp_tests/pv.or.sc.c.hex
+pv.or.sc.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.or.sc.c.hex"
+pv.or.sc.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.xor.n-vsim-run-gui
+pv.xor.n-vsim-run-gui: vsim-all xpulp_tests/pv.xor.n.hex
+pv.xor.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.xor.n.hex"
+pv.xor.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.xor.sc.n-vsim-run-gui
+pv.xor.sc.n-vsim-run-gui: vsim-all xpulp_tests/pv.xor.sc.n.hex
+pv.xor.sc.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.xor.sc.n.hex"
+pv.xor.sc.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.xor.c-vsim-run-gui
+pv.xor.c-vsim-run-gui: vsim-all xpulp_tests/pv.xor.c.hex
+pv.xor.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.xor.c.hex"
+pv.xor.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.xor.sc.c-vsim-run-gui
+pv.xor.sc.c-vsim-run-gui: vsim-all xpulp_tests/pv.xor.sc.c.hex
+pv.xor.sc.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.xor.sc.c.hex"
+pv.xor.sc.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.and.n-vsim-run-gui
+pv.and.n-vsim-run-gui: vsim-all xpulp_tests/pv.and.n.hex
+pv.and.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.and.n.hex"
+pv.and.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.and.sc.n-vsim-run-gui
+pv.and.sc.n-vsim-run-gui: vsim-all xpulp_tests/pv.and.sc.n.hex
+pv.and.sc.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.and.sc.n.hex"
+pv.and.sc.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.and.c-vsim-run-gui
+pv.and.c-vsim-run-gui: vsim-all xpulp_tests/pv.and.c.hex
+pv.and.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.and.c.hex"
+pv.and.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.and.sc.c-vsim-run-gui
+pv.and.sc.c-vsim-run-gui: vsim-all xpulp_tests/pv.and.sc.c.hex
+pv.and.sc.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.and.sc.c.hex"
+pv.and.sc.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.abs.n-vsim-run-gui
+pv.abs.n-vsim-run-gui: vsim-all xpulp_tests/pv.abs.n.hex
+pv.abs.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.abs.n.hex"
+pv.abs.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.abs.c-vsim-run-gui
+pv.abs.c-vsim-run-gui: vsim-all xpulp_tests/pv.abs.c.hex
+pv.abs.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.abs.c.hex"
+pv.abs.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.dotup.n-vsim-run-gui
+pv.dotup.n-vsim-run-gui: vsim-all xpulp_tests/pv.dotup.n.hex
+pv.dotup.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.dotup.n.hex"
+pv.dotup.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.dotup.sc.n-vsim-run-gui
+pv.dotup.sc.n-vsim-run-gui: vsim-all xpulp_tests/pv.dotup.sc.n.hex
+pv.dotup.sc.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.dotup.sc.n.hex"
+pv.dotup.sc.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.dotup.c-vsim-run-gui
+pv.dotup.c-vsim-run-gui: vsim-all xpulp_tests/pv.dotup.c.hex
+pv.dotup.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.dotup.c.hex"
+pv.dotup.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.dotup.sc.c-vsim-run-gui
+pv.dotup.sc.c-vsim-run-gui: vsim-all xpulp_tests/pv.dotup.sc.c.hex
+pv.dotup.sc.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.dotup.sc.c.hex"
+pv.dotup.sc.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.dotusp.n-vsim-run-gui
+pv.dotusp.n-vsim-run-gui: vsim-all xpulp_tests/pv.dotusp.n.hex
+pv.dotusp.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.dotusp.n.hex"
+pv.dotusp.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.dotusp.sc.n-vsim-run-gui
+pv.dotusp.sc.n-vsim-run-gui: vsim-all xpulp_tests/pv.dotusp.sc.n.hex
+pv.dotusp.sc.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.dotusp.sc.n.hex"
+pv.dotusp.sc.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.dotusp.c-vsim-run-gui
+pv.dotusp.c-vsim-run-gui: vsim-all xpulp_tests/pv.dotusp.c.hex
+pv.dotusp.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.dotusp.c.hex"
+pv.dotusp.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.dotusp.sc.c-vsim-run-gui
+pv.dotusp.sc.c-vsim-run-gui: vsim-all xpulp_tests/pv.dotusp.sc.c.hex
+pv.dotusp.sc.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.dotusp.sc.c.hex"
+pv.dotusp.sc.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.dotsp.n-vsim-run-gui
+pv.dotsp.n-vsim-run-gui: vsim-all xpulp_tests/pv.dotsp.n.hex
+pv.dotsp.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.dotsp.n.hex"
+pv.dotsp.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.dotsp.sc.n-vsim-run-gui
+pv.dotsp.sc.n-vsim-run-gui: vsim-all xpulp_tests/pv.dotsp.sc.n.hex
+pv.dotsp.sc.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.dotsp.sc.n.hex"
+pv.dotsp.sc.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.dotsp.c-vsim-run-gui
+pv.dotsp.c-vsim-run-gui: vsim-all xpulp_tests/pv.dotsp.c.hex
+pv.dotsp.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.dotsp.c.hex"
+pv.dotsp.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.dotsp.sc.c-vsim-run-gui
+pv.dotsp.sc.c-vsim-run-gui: vsim-all xpulp_tests/pv.dotsp.sc.c.hex
+pv.dotsp.sc.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.dotsp.sc.c.hex"
+pv.dotsp.sc.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sdotup.n-vsim-run-gui
+pv.sdotup.n-vsim-run-gui: vsim-all xpulp_tests/pv.sdotup.n.hex
+pv.sdotup.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sdotup.n.hex"
+pv.sdotup.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sdotup.sc.n-vsim-run-gui
+pv.sdotup.sc.n-vsim-run-gui: vsim-all xpulp_tests/pv.sdotup.sc.n.hex
+pv.sdotup.sc.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sdotup.sc.n.hex"
+pv.sdotup.sc.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sdotup.c-vsim-run-gui
+pv.sdotup.c-vsim-run-gui: vsim-all xpulp_tests/pv.sdotup.c.hex
+pv.sdotup.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sdotup.c.hex"
+pv.sdotup.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sdotup.sc.c-vsim-run-gui
+pv.sdotup.sc.c-vsim-run-gui: vsim-all xpulp_tests/pv.sdotup.sc.c.hex
+pv.sdotup.sc.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sdotup.sc.c.hex"
+pv.sdotup.sc.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sdotusp.n-vsim-run-gui
+pv.sdotusp.n-vsim-run-gui: vsim-all xpulp_tests/pv.sdotusp.n.hex
+pv.sdotusp.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sdotusp.n.hex"
+pv.sdotusp.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sdotusp.sc.n-vsim-run-gui
+pv.sdotusp.sc.n-vsim-run-gui: vsim-all xpulp_tests/pv.sdotusp.sc.n.hex
+pv.sdotusp.sc.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sdotusp.sc.n.hex"
+pv.sdotusp.sc.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sdotusp.c-vsim-run-gui
+pv.sdotusp.c-vsim-run-gui: vsim-all xpulp_tests/pv.sdotusp.c.hex
+pv.sdotusp.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sdotusp.c.hex"
+pv.sdotusp.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sdotusp.sc.c-vsim-run-gui
+pv.sdotusp.sc.c-vsim-run-gui: vsim-all xpulp_tests/pv.sdotusp.sc.c.hex
+pv.sdotusp.sc.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sdotusp.sc.c.hex"
+pv.sdotusp.sc.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sdotsp.n-vsim-run-gui
+pv.sdotsp.n-vsim-run-gui: vsim-all xpulp_tests/pv.sdotsp.n.hex
+pv.sdotsp.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sdotsp.n.hex"
+pv.sdotsp.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sdotsp.sc.n-vsim-run-gui
+pv.sdotsp.sc.n-vsim-run-gui: vsim-all xpulp_tests/pv.sdotsp.sc.n.hex
+pv.sdotsp.sc.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sdotsp.sc.n.hex"
+pv.sdotsp.sc.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sdotsp.c-vsim-run-gui
+pv.sdotsp.c-vsim-run-gui: vsim-all xpulp_tests/pv.sdotsp.c.hex
+pv.sdotsp.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sdotsp.c.hex"
+pv.sdotsp.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.sdotsp.sc.c-vsim-run-gui
+pv.sdotsp.sc.c-vsim-run-gui: vsim-all xpulp_tests/pv.sdotsp.sc.c.hex
+pv.sdotsp.sc.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.sdotsp.sc.c.hex"
+pv.sdotsp.sc.c-vsim-run-gui: vsim-run-gui

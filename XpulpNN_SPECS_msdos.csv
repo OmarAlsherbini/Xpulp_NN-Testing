@@ -1,0 +1,44 @@
+INSTRUCTIONS,,,ENCODING,,,,,,ENCODING COMPILATORE,,,,,,
+,,,31..25,24..20,19?15,14..12,11?7,6..0,31..25,24..20,19?15,14..12,11?7,6..0,
+Mnemonic,SPR,,func 7,IMM,reg1,func 3,regd,OPCODE,func 7,IMM,reg1,func 3,regd,OPCODE,
+HALF,,,,,,,,,,,,,,,
+pv.mlsdotup.h,0,"pv.smlsdotup.h rD,rs1,Imm",1 1100 00,Immediate,rs1,000,dest,111 0111,1 1100 00,Immediate,rs1,000,dest,111 0111,E0000077
+,,,,,,,,,,,,,,,
+pv.mlsdotusp.h,0,"pv.smlsdotusp.h rD,rs1,Imm",1 1101 00,Immediate,rs1,000,dest,111 0111,1 1101 00,Immediate,rs1,000,dest,111 0111,E8000077
+,,,,,,,,,,,,,,,
+pv.mlsdotsup.h,0,"pv.smlsdotsup.h rD,rs1,Imm",1 1011 00,Immediate,rs1,000,dest,111 0111,1 1011 00,Immediate,rs1,000,dest,111 0111,D8000077
+,,,,,,,,,,,,,,,
+pv.mlsdotsp.h,0,"pv.smlsdotsp.h rD,rs1,Imm",1 1111 00,Immediate,rs1,000,dest,111 0111,1 1111 00,Immediate,rs1,000,dest,111 0111,F8000077
+BYTE,,,,,,,,,,,,,,,
+pv.mlsdotup.b,0,"pv.smlsdotup.b rD,rs1,Imm",1 1100 00,Immediate,rs1,001,dest,111 0111,1 1100 00,Immediate,rs1,001,dest,111 0111,E0001077
+,,,,,,,,,,,,,,,
+pv.mlsdotusp.b,0,"pv.smlsdotsup.b rD,rs1,Imm",1 1101 00,Immediate,rs1,001,dest,111 0111,1 1101 00,Immediate,rs1,001,dest,111 0111,E8001077
+,,,,,,,,,,,,,,,
+pv.mlsdotsup.b,0,"pv.smlsdotusp.b rD,rs1,Imm",1 1011 00,Immediate,rs1,001,dest,111 0111,1 1011 00,Immediate,rs1,001,dest,111 0111,D8001077
+,,,,,,,,,,,,,,,
+pv.mlsdotsp.b,0,"pv.smlsdotsp.b rD,rs1,Imm",1 1111 00,Immediate,rs1,001,dest,111 0111,1 1111 00,Immediate,rs1,001,dest,111 0111,F8001077
+NIBBLE,,,,,,,,,,,,,,,
+pv.mlsdotup.n,0,"pv.smlsdotup.n rD,rs1,Imm",1 1100 00,Immediate,rs1,010,dest,111 0111,1 1100 00,Immediate,rs1,010,dest,111 0111,E0002077
+,,,,,,,,,,,,,,,
+pv.mlsdotusp.n,0,"pv.smlsdotusp.n rD,rs1,Imm",1 1101 00,Immediate,rs1,010,dest,111 0111,1 1101 00,Immediate,rs1,010,dest,111 0111,E8002077
+,,,,,,,,,,,,,,,
+pv.mlsdotsup.n,0,"pv.smlsdotsup.n rD,rs1,Imm",1 1011 00,Immediate,rs1,010,dest,111 0111,1 1011 00,Immediate,rs1,010,dest,111 0111,D8002077
+,,,,,,,,,,,,,,,
+pv.mlsdotsp.n,0,"pv.smlsdotsp.n rD,rs1,Imm",1 1111 00,Immediate,rs1,010,dest,111 0111,1 1111 00,Immediate,rs1,010,dest,111 0111,F8002077
+CRUMB,,,,,,,,,,,,,,,
+pv.mlsdotup.c,0,"pv.smlsdotup.c rD,rs1,Imm",1 1100 00,Immediate,rs1,011,dest,111 0111,1 1100 00,Immediate,rs1,011,dest,111 0111,E0003077
+,,,,,,,,,,,,,,,
+pv.mlsdotusp.c,0,"pv.smlsdotusp.c rD,rs1,Imm",1 1101 00,Immediate,rs1,011,dest,111 0111,1 1101 00,Immediate,rs1,011,dest,111 0111,E8003077
+,,,,,,,,,,,,,,,
+pv.mlsdotsup.c,0,"pv.smlsdotsup.c rD,rs1,Imm",1 1011 00,Immediate,rs1,011,dest,111 0111,1 1011 00,Immediate,rs1,011,dest,111 0111,D8003077
+,,,,,,,,,,,,,,,
+pv.mlsdotsp.c,0,"pv.smlsdotsp.c rD,rs1,Imm",1 1111 00,Immediate,rs1,011,dest,111 0111,1 1111 00,Immediate,rs1,011,dest,111 0111,F8003077
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,IMMEDIATE FIELD,DESCRIPTION,,,,,ADDITIONAL COMMENTS,,,,,,,
+,,4,"if 1 --> updates the ""weights"" SPRs otherwise does not",,,,,"The two fields are mutually excluding. If bit4 is set to 1 the bit3 cannot, and viceversa",,,,,,,
+,,3,"if 1 --> updates the ""activations"" SPRs otherwise does not",,,,,,,,,,,,
+,,2..1,"00,01,10,11 --> selects which weight SPR to be used for current operation and eventually updated with new data coming from L1",,,,,This description assumes the SPR used is the same to be updated.,,,Thies field encodes up to 4 weight SPRs,,,,
+,,0,"0, 1 -->selects which activation SPR to be used for current operation and eventually updated with new data coming from L1",,,,,This description assumes the SPR used is the same to be updated.,,,This field encodes up to 2 activation SPRs,,,,

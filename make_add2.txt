@@ -1,0 +1,80 @@
+
+.PHONY: pv.mlsdotup.h-vsim-run-gui
+pv.mlsdotup.h-vsim-run-gui: vsim-all xpulp_tests/pv.mlsdotup.h.hex
+pv.mlsdotup.h-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.mlsdotup.h.hex"
+pv.mlsdotup.h-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.mlsdotusp.h-vsim-run-gui
+pv.mlsdotusp.h-vsim-run-gui: vsim-all xpulp_tests/pv.mlsdotusp.h.hex
+pv.mlsdotusp.h-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.mlsdotusp.h.hex"
+pv.mlsdotusp.h-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.mlsdotsup.h-vsim-run-gui
+pv.mlsdotsup.h-vsim-run-gui: vsim-all xpulp_tests/pv.mlsdotsup.h.hex
+pv.mlsdotsup.h-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.mlsdotsup.h.hex"
+pv.mlsdotsup.h-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.mlsdotsp.h-vsim-run-gui
+pv.mlsdotsp.h-vsim-run-gui: vsim-all xpulp_tests/pv.mlsdotsp.h.hex
+pv.mlsdotsp.h-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.mlsdotsp.h.hex"
+pv.mlsdotsp.h-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.mlsdotup.b-vsim-run-gui
+pv.mlsdotup.b-vsim-run-gui: vsim-all xpulp_tests/pv.mlsdotup.b.hex
+pv.mlsdotup.b-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.mlsdotup.b.hex"
+pv.mlsdotup.b-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.mlsdotusp.b-vsim-run-gui
+pv.mlsdotusp.b-vsim-run-gui: vsim-all xpulp_tests/pv.mlsdotusp.b.hex
+pv.mlsdotusp.b-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.mlsdotusp.b.hex"
+pv.mlsdotusp.b-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.mlsdotsup.b-vsim-run-gui
+pv.mlsdotsup.b-vsim-run-gui: vsim-all xpulp_tests/pv.mlsdotsup.b.hex
+pv.mlsdotsup.b-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.mlsdotsup.b.hex"
+pv.mlsdotsup.b-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.mlsdotsp.b-vsim-run-gui
+pv.mlsdotsp.b-vsim-run-gui: vsim-all xpulp_tests/pv.mlsdotsp.b.hex
+pv.mlsdotsp.b-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.mlsdotsp.b.hex"
+pv.mlsdotsp.b-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.mlsdotup.n-vsim-run-gui
+pv.mlsdotup.n-vsim-run-gui: vsim-all xpulp_tests/pv.mlsdotup.n.hex
+pv.mlsdotup.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.mlsdotup.n.hex"
+pv.mlsdotup.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.mlsdotusp.n-vsim-run-gui
+pv.mlsdotusp.n-vsim-run-gui: vsim-all xpulp_tests/pv.mlsdotusp.n.hex
+pv.mlsdotusp.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.mlsdotusp.n.hex"
+pv.mlsdotusp.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.mlsdotsup.n-vsim-run-gui
+pv.mlsdotsup.n-vsim-run-gui: vsim-all xpulp_tests/pv.mlsdotsup.n.hex
+pv.mlsdotsup.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.mlsdotsup.n.hex"
+pv.mlsdotsup.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.mlsdotsp.n-vsim-run-gui
+pv.mlsdotsp.n-vsim-run-gui: vsim-all xpulp_tests/pv.mlsdotsp.n.hex
+pv.mlsdotsp.n-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.mlsdotsp.n.hex"
+pv.mlsdotsp.n-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.mlsdotup.c-vsim-run-gui
+pv.mlsdotup.c-vsim-run-gui: vsim-all xpulp_tests/pv.mlsdotup.c.hex
+pv.mlsdotup.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.mlsdotup.c.hex"
+pv.mlsdotup.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.mlsdotusp.c-vsim-run-gui
+pv.mlsdotusp.c-vsim-run-gui: vsim-all xpulp_tests/pv.mlsdotusp.c.hex
+pv.mlsdotusp.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.mlsdotusp.c.hex"
+pv.mlsdotusp.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.mlsdotsup.c-vsim-run-gui
+pv.mlsdotsup.c-vsim-run-gui: vsim-all xpulp_tests/pv.mlsdotsup.c.hex
+pv.mlsdotsup.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.mlsdotsup.c.hex"
+pv.mlsdotsup.c-vsim-run-gui: vsim-run-gui
+
+.PHONY: pv.mlsdotsp.c-vsim-run-gui
+pv.mlsdotsp.c-vsim-run-gui: vsim-all xpulp_tests/pv.mlsdotsp.c.hex
+pv.mlsdotsp.c-vsim-run-gui: ALL_VSIM_FLAGS += "+firmware=xpulp_tests/pv.mlsdotsp.c.hex"
+pv.mlsdotsp.c-vsim-run-gui: vsim-run-gui

@@ -1,0 +1,17 @@
+Mnemonic,SPR,INSTR,func 7,IMM,reg1,func 3,regd,OPCODE,func 7,IMM,reg1,func 3,regd,OPCODE,HEX,HEX_FINAL
+pv.mlsdotup.h,0,"pv.smlsdotup.h rD,rs1,Imm",1 1100 00,Immediate,rs1,000,dest,111 0111,1 1100 00,Immediate,rs1,000,dest,111 0111,0xE0000077,0xE0940777
+pv.mlsdotusp.h,0,"pv.smlsdotusp.h rD,rs1,Imm",1 1101 00,Immediate,rs1,000,dest,111 0111,1 1101 00,Immediate,rs1,000,dest,111 0111,0xE8000077,0xE8940777
+pv.mlsdotsup.h,0,"pv.smlsdotsup.h rD,rs1,Imm",1 1011 00,Immediate,rs1,000,dest,111 0111,1 1011 00,Immediate,rs1,000,dest,111 0111,0xD8000077,0xD8940777
+pv.mlsdotsp.h,0,"pv.smlsdotsp.h rD,rs1,Imm",1 1111 00,Immediate,rs1,000,dest,111 0111,1 1111 00,Immediate,rs1,000,dest,111 0111,0xF8000077,0xF8940777
+pv.mlsdotup.b,0,"pv.smlsdotup.b rD,rs1,Imm",1 1100 00,Immediate,rs1,001,dest,111 0111,1 1100 00,Immediate,rs1,001,dest,111 0111,0xE0001077,0xE0941777
+pv.mlsdotusp.b,0,"pv.smlsdotsup.b rD,rs1,Imm",1 1101 00,Immediate,rs1,001,dest,111 0111,1 1101 00,Immediate,rs1,001,dest,111 0111,0xE8001077,0xE8941777
+pv.mlsdotsup.b,0,"pv.smlsdotusp.b rD,rs1,Imm",1 1011 00,Immediate,rs1,001,dest,111 0111,1 1011 00,Immediate,rs1,001,dest,111 0111,0xD8001077,0xD8941777
+pv.mlsdotsp.b,0,"pv.smlsdotsp.b rD,rs1,Imm",1 1111 00,Immediate,rs1,001,dest,111 0111,1 1111 00,Immediate,rs1,001,dest,111 0111,0xF8001077,0xF8941777
+pv.mlsdotup.n,0,"pv.smlsdotup.n rD,rs1,Imm",1 1100 00,Immediate,rs1,010,dest,111 0111,1 1100 00,Immediate,rs1,010,dest,111 0111,0xE0002077,0xE0942777
+pv.mlsdotusp.n,0,"pv.smlsdotusp.n rD,rs1,Imm",1 1101 00,Immediate,rs1,010,dest,111 0111,1 1101 00,Immediate,rs1,010,dest,111 0111,0xE8002077,0xE8942777
+pv.mlsdotsup.n,0,"pv.smlsdotsup.n rD,rs1,Imm",1 1011 00,Immediate,rs1,010,dest,111 0111,1 1011 00,Immediate,rs1,010,dest,111 0111,0xD8002077,0xD8942777
+pv.mlsdotsp.n,0,"pv.smlsdotsp.n rD,rs1,Imm",1 1111 00,Immediate,rs1,010,dest,111 0111,1 1111 00,Immediate,rs1,010,dest,111 0111,0xF8002077,0xF8942777
+pv.mlsdotup.c,0,"pv.smlsdotup.c rD,rs1,Imm",1 1100 00,Immediate,rs1,011,dest,111 0111,1 1100 00,Immediate,rs1,011,dest,111 0111,0xE0003077,0xE0943777
+pv.mlsdotusp.c,0,"pv.smlsdotusp.c rD,rs1,Imm",1 1101 00,Immediate,rs1,011,dest,111 0111,1 1101 00,Immediate,rs1,011,dest,111 0111,0xE8003077,0xE8943777
+pv.mlsdotsup.c,0,"pv.smlsdotsup.c rD,rs1,Imm",1 1011 00,Immediate,rs1,011,dest,111 0111,1 1011 00,Immediate,rs1,011,dest,111 0111,0xD8003077,0xD8943777
+pv.mlsdotsp.c,0,"pv.smlsdotsp.c rD,rs1,Imm",1 1111 00,Immediate,rs1,011,dest,111 0111,1 1111 00,Immediate,rs1,011,dest,111 0111,0xF8003077,0xF8003077
